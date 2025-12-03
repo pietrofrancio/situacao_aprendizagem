@@ -1,0 +1,140 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --primary: #000000;
+    --secondary: #f5f3f3;
+    --texto: #575757;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav_links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .nav_links a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav_links a:hover {
+    color: var(--primary);
+    transform: translateY(-5px);
+  }
+  
+  /* Animação nas letras */
+  .animado span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .animado span:hover {
+    transform: translateY(-5px);
+    color: #7d7d7d;
+  }
+  
+  /* Conteúdo principal */
+  .offline {
+    display: flex;
+    gap: 3rem; /* REDUZ distância entre texto e imagem */
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6%;
+    background-color: var(--secondary);
+    min-height: 80vh;
+    transition: transform 1s ease;
+  }
+  
+  .offline:hover {
+    transform: translateY(-5px);
+  }
+  
+  .textoOffline {
+    max-width: 450px;
+  }
+  
+  .textoOffline h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .textoOffline p {
+    color: var(--texto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #a4a4a4;
+    transform: translateY(-5px);
+  }
+  
+  .offlineIMG {
+    width: 420px; /* levemente menor para equilibrar */
+    border-radius: 15px;
+    transition: 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .offlineIMG:hover {
+    transform: translateY(-5px);
+    filter: brightness(0.7);
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: var(--secondary);
+    color: black;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+  
