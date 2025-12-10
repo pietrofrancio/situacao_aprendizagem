@@ -1,0 +1,216 @@
+/* Estilização Universal */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #000000;
+  --secondary: #f5f3f3;
+  --texto: #575757;
+} 
+
+header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+} 
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6%;
+} 
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.nav_links{
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+  transition: color 0.3s ease;
+} 
+
+.nav_links a:hover {
+  color: var(--primary);
+  transform: translateY(-5px);
+} 
+
+.animado span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}  
+
+.animado span:hover {
+  transform: translateY(-5px);
+  color: #7d7d7d;
+}  
+
+footer{
+  background-color: var(--secondary);
+  color: black;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+
+/* Fim da Estilização Universal */
+
+
+.fundo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6%;
+  background-color: white;
+  height: 400px;
+}
+
+.fundo_conteudo{
+  max-width: 600px;
+}
+
+.fundo_conteudo h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.fundo_conteudo h1{
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fundo_conteudo p {
+  color: var(--texto);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Início da Estilização CURSOS */
+
+.secao{
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.titulos{
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: baseline;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .titulos p{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: baseline;
+    color: var(--texto);
+    margin-top: 10px;
+  }
+  
+  .titulo{
+  background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 8%;
+    height: 600px;
+    transition: transform 1s ease;
+}
+
+.titulo:hover{
+    transform: translateY(-5px);
+}
+.titulo img{
+    transition: transform 0.3s ease;
+    width: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.titulo img:hover{
+      transform: translateY(-5px);
+}
+
+.cursoCaixa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 6%;
+  gap: 3rem;
+  background-color: white;
+  transition: transform 1s ease;
+}
+
+.cursoCaixa:hover{
+    transform: translateY(-5px);
+}
+
+.cursoImg {
+  width: 700px;
+  height: 500px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cursoTexto {
+  max-width: 550px;
+}
+
+.cursoTexto h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.cursoTexto p {
+  color: var(--texto);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cursoCaixa.invertido {
+  flex-direction: row-reverse;
+  background-color: var(--secondary);
+  transition: transform 1s ease;
+}
+
+.cursoCaixa.invertido:hover{
+    transform: translateY(-5px);
+}
+
+.cursoImg:hover {
+    transform: translateY(-5px);
+    filter: brightness(0.6);
+}
+
+/* Fim da Estilização CURSOS */
